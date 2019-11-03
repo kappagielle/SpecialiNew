@@ -3,7 +3,7 @@ package com.cerved.specialinew.format
 enum ConsumerFormat {
 
     EMPTY_FILE("Nessun file", 0),
-    CAMPI_VARIABILI("Campi variabili", 1)
+    TEXT_FILE("Campi variabili o campi fissi", 1)
 
 
     private static Map<String, ConsumerFormat> map = new HashMap<String, ConsumerFormat>();

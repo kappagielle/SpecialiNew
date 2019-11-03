@@ -6,10 +6,9 @@ import sun.misc.Service
 
 abstract class DataConsumer {
 
-    abstract boolean canManageFormat(ConsumerFormat format)
-    abstract File consume(DataProducer producer, JobData job)
     abstract String getTemplate()
-
+    abstract boolean canManageFormat(ConsumerFormat format)
+    abstract Map consume(DataProducer producer, JobData job)
     static DataConsumer createInstanceForFormat(ConsumerFormat format) {
         for (DataConsumer c in Service.providers(DataConsumer.class)) {
             if (c.canManageFormat(format)) {

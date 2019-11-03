@@ -1,4 +1,4 @@
-package com.cerved.specialinew.execution
+package com.cerved.specialinew.plugin
 
 import com.cerved.specialinew.dto.JobData
 
